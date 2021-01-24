@@ -26,7 +26,7 @@ describe MostViews do
     end
 
     it 'returns correct hash' do
-      expect(subject).to eq(most_views)
+      expect(subject.to_a).to eq(most_views.to_a)
     end
   end
 
@@ -47,7 +47,7 @@ describe MostViews do
     end
 
     it 'returns correct hash' do
-      expect(subject).to eq(most_views)
+      expect(subject.to_a).to eq(most_views.to_a)
     end
   end
 end
