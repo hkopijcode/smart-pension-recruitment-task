@@ -1,12 +1,12 @@
 class UniqueViews
-  attr_reader :views_hash, :unique_views
-
   def call
     generate_unique_views
     sort_unique_views
   end
 
   private
+
+  attr_reader :views_hash, :unique_views
 
   def initialize(views_hash)
     @views_hash = views_hash

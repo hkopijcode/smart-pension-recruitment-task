@@ -1,12 +1,12 @@
 class MostViews
-  attr_reader :views_hash, :most_views
-
   def call
     generate_most_views
     sort_most_views
   end
 
   private
+
+  attr_reader :views_hash, :most_views
 
   def initialize(views_hash)
     @views_hash = views_hash
