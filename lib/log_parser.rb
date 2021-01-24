@@ -1,12 +1,12 @@
 class LogParser
-  attr_reader :file_path, :views
-
   def process
     validate_file_path
     generate_views_hash
   end
 
   private
+
+  attr_reader :file_path, :views
 
   def initialize(file_path)
     @file_path = file_path

@@ -7,8 +7,7 @@ describe LogParser do
     let(:log_path) { 'spec/fixtures/sample.log'}
 
     it 'returns valid hash' do
-      subject.process
-      expect(subject.views).to eq({
+      expect(subject.process).to eq({
         '/home'=>['682.704.613.213',
                   '682.704.613.213',
                   '682.704.613.213',
@@ -20,7 +19,7 @@ describe LogParser do
                      '715.156.286.412',
                      '715.156.286.412']
         })
-      expect(subject.views.count).to eq(2)
+      expect(subject.process.count).to eq(2)
     end
   end
 
