@@ -14,8 +14,8 @@ class UniqueViews
   end
 
   def generate_unique_views
-    views_hash.each do |k, _v|
-      unique_views[k] = views_hash[k].uniq.count
+    views_hash.each do |k, v|
+      unique_views[k] = v.uniq.count
     end
   end
 
